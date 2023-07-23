@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/background_styles.css">
+        <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+    </head>
+    <body>
+     <div class="header contact-hero-image">
+        <nav class="navbar">
+            <div class="brand-title"><a href="#" style="color: #FFF;">PAMELA CUISON</a></div>
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links topnav">
+              <ul>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">RESUME</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </div>
+          </nav>
+        <div class="header-content">
+        <h1>&nbsp;</h1>
+ <h3>"To effectively communicate, we must realize that we are all different in the way we perceive the world and use this understanding as a guide to our communication with others."  </h3><h7>- Tony Robbins</h7>
+ </div>
+</div>
+      
+<section class="cform">          
+ <div class="form-container">
+      <div class="content">
+        <div class="left-side">
+         <!-- <div class="address details">
+            <i class="fa fa-map-marker"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">Toronto, ON</div>
+            <div class="text-two">Canada</div>
+          </div>-->
+          <div class="phone details">
+            <i class="fa fa-phone"></i>
+            <div class="topic">Cell</div>
+            <div class="text-one">+1 416 998 6889</div>
+            <!--<div class="text-two">+0096 3434 5678</div>-->
+          </div>
+          <div class="email details">
+            <i class="fa fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">pmcuison@gmail.com</div>
+           <!-- <div class="text-two">info.codinglab@gmail.com</div>-->
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Let's get in touch</div>
+          <p>Feel free to reach out if you want to connect, or just have a chat.</p>
+
+          <form action="https://formsubmit.co/d840ef507b0aeb5f36d9ca09753cb2b0 " method="POST">
+            <!--Honeypot-->
+            <input type="text" name="_honey" style="display: none;">
+
+            <!--Disable Captcha-->
+            <input type="hidden" name="_captcha" value="false">
+            <!--Success Message-->
+            <input type="hidden" name="_next" value="add website address here">
+
+            <div class="input-box">
+              <input type="text" name="Name"  id="name" placeholder="Enter your name" required />
+            </div>
+            <div class="input-box">
+              <input type="email" name="Email" id="email" placeholder="Enter your email" required/>
+            </div>
+            <div class="input-box message-box">
+              <textarea  id="message" name="message" placeholder="Enter your message" required></textarea>
+            </div>
+            <div class="form-btn">
+              <input type="submit" value="SEND NOW" />
+            </div>
+          </form>
+ 
+        </div>
+      </div>
+    </div>
+</section>
+        <section class="footer">  
+              <div class="social">
+                <a href="#"><i class="fa fa-linkedin"></i></a>  
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+              </div>
+            <ul class="list">
+              <li>
+                <a href="#">Work</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Resume</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+             
+            </ul>
+            <p class="copyright">&copy;PAMELA CUISON 2023</p>
+          </section>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+      function sendEmail(){
+        Email.send({
+          SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+          Host : "smtp.gmail.com",
+          Username : "pmcuison@gmail.com",
+          Password : "2017inHEL!",
+          To : 'northoftocreative@gmail.com',
+          From : document.getElementById("email").value, 
+          Subject : "New Contact Form Enquiry",
+          Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+    }
+  </script>
+    </body>
+</html>
