@@ -614,7 +614,7 @@ img {
   transition-duration: 0.2s;
   cursor: pointer;
   font-family: 'montserrat';
-  background-color: rgb(0,0,0,0.3);
+  background-color: rgb(81,133,151,0.7);
   border: 1px solid #fff;
   outline: none; 
   margin: 10px auto 0;
@@ -622,7 +622,7 @@ img {
 }
 
 .form-btn1 input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
-  background-color: rgb(81,133,151,0.7);
+  background-color: #518597;
   color: #fff;
   border: 1px solid #fff;
 }
