@@ -83,8 +83,8 @@
             <div class="input-box message-box">
               <textarea  id="message" name="Message" placeholder="Enter your message" required></textarea>
             </div>
-            <div class="form-btn">
-              <input type="submit" value="SEND NOW" />
+            <div class="form-btn1">
+              <input text="submit" value="SEND NOW" />
             </div>
           </form>
   
@@ -117,22 +117,6 @@
             <p class="copyright">&copy;PAMELA CUISON 2023</p>
           </section>
 
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-      function sendEmail(){
-        Email.send({
-          SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-          Host : "smtp.gmail.com",
-          Username : "pmcuison@gmail.com",
-          Password : "2017inHEL!",
-          To : 'northoftocreative@gmail.com',
-          From : document.getElementById("email").value, 
-          Subject : "New Contact Form Enquiry",
-          Body : "And this is the body"
-      }).then(
-        message => alert(message)
-      );
-    }
-  </script>
+ 
     </body>
 </html>
